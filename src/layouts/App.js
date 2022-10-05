@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import '../styles/App.css';
-
 function App() {
   return (
     <div className="App">
@@ -7,12 +7,9 @@ function App() {
         <p>
           DEEP_BG_MUSIC
         </p>
+        <Link to="/practice">Go Practice</Link>
       </header>
     </div>
   );
 }
-<script>
-
-
-</script>
 export default App;
