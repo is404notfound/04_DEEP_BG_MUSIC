@@ -21,6 +21,8 @@ const x = {
     totalTime: 8
 };
 
+
+
 const DRUMS = {
     notes: [
         { pitch: 36, quantizedStartStep: 0, quantizedEndStep: 1, isDrum: true },
@@ -48,6 +50,14 @@ const DRUMS = {
 };
 
 const player = new mm.Player();
+const soundFontPlayer = new mm.SoundFontPlayer('https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus');
+
+export const soundFontPlayerStart = () => {
+    soundFontPlayer.start(x)
+}
+export const soundFontPlayerStop = () => {
+    soundFontPlayer.stop();
+}
 export const start = () => {
     player.start(x);
 }
